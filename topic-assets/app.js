@@ -388,3 +388,62 @@
     pythonLoadTimer=setTimeout(()=>finish('Python runtime did not load. Check your connection.',true),45000);
   });
 })();
+
+/* ===== DARK MODE ===== */
+
+body.dark-mode {
+  --paper: #101820;
+  --card: #1b2732;
+  --ink: #f1f5f9;
+  --muted: #a5b4c3;
+  --line: #344454;
+  --green: #34d399;
+  --mint: #183c35;
+  --orange: #fb923c;
+  --dark: #07130f;
+  --panel: #17232e;
+  --shadow: 0 12px 34px rgba(0,0,0,.35);
+
+  color: var(--ink);
+  background: var(--paper);
+}
+
+body.dark-mode .card,
+body.dark-mode .learning-progress,
+body.dark-mode .topic-nav,
+body.dark-mode .topic-menu,
+body.dark-mode .note,
+body.dark-mode .hero,
+body.dark-mode .lower,
+body.dark-mode .quick-check {
+  background-color: var(--card);
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select,
+body.dark-mode pre,
+body.dark-mode code {
+  background-color: #101820;
+  color: #f1f5f9;
+  border-color: var(--line);
+}
+
+body.dark-mode button {
+  color: var(--ink);
+}
+
+body.dark-mode a {
+  color: #6ee7b7;
+}
+
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode label,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: inherit;
+}
